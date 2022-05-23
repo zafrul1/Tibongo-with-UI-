@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1472</width>
+    <height>1189</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">
+</string>
+   </property>
+   <widget class="QGraphicsView" name="graphicsView_Spielfeld">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>19</y>
+      <width>500</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="accessibleName">
+     <string/>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);
+</string>
+    </property>
+    <property name="backgroundBrush">
+     <brush brushstyle="NoBrush">
+      <color alpha="255">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </brush>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_punkte">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>20</y>
+      <width>251</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(208, 208, 208);
+font: 900 22pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;</string>
+    </property>
+    <property name="text">
+     <string> Punkte</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_drehen_links">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>470</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 9pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Links Drehen</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_eingaben">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>90</y>
+      <width>250</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 22pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;
+background-color: rgb(188, 188, 188);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Eingaben</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_restzeit">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>160</y>
+      <width>250</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 22pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(195, 195, 195);</string>
+    </property>
+    <property name="text">
+     <string>Restzeit</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber_punkte">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>20</y>
+      <width>110</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber_eingaben">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>90</y>
+      <width>110</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(6, 6, 6);
+background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber_zeit">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>160</y>
+      <width>110</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_Spielsteine">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>290</y>
+      <width>400</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(193, 193, 193);</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_stein1">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>430</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stein1</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_stein2">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>430</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stein2</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_stein3">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>430</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stein3</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_stein4">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>430</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stein4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_bewegen_links">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>490</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 9pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Links</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_reset">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>510</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 9pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_bewegen_hoch">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>470</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 9pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Hoch</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_flip">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>490</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 9pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Flip</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_bewegen_runter">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>510</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 9pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Runter</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_naechste">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>510</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 9pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Näechste Aufgabe</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_drehen_rechts">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>470</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 9pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Rechts Drehen</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_logo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>1001</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/bilder/Logo1_oH.png);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_bewegen_rechts">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>490</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 9pt &quot;Neue Haas Grotesk Text Pro Blac&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Rechts</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1472</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave_File">
+   <property name="text">
+    <string>Save File </string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>bilder/hintergrund.png</file>
+        <file>bilder/Logo1_mH.png</file>
+        <file>bilder/Logo1_oH.png</file>
+        <file>bilder/Logo2_mH.png</file>
+        <file>bilder/Logo2_oH.png</file>
+        <file>bilder/Logo3_mH.png</file>
+        <file>bilder/Logo3_oH.png</file>
+    </qresource>
+</RCC>
